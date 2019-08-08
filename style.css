@@ -1,0 +1,132 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #a9a9a9;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 42px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+p, h4 {
+    padding: 0 10px;
+    margin: 5px 0;
+}
+
+img {
+    display: block;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+img:hover {
+    filter: sepia(100%) brightness(150%);
+    transform: scale(1.5);
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row::before, .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col"] {
+    float: left;
+    min-height: 1px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+.texture {
+    background-image: url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+}
+
+.left {text-align: left;}
+
+.right {text-align: right;}
+
+.center {text-align: center;}
+
+.justify {text-align: justify;}
+
+.scroll {
+    height: 200px;
+    overflow: scroll;
+}
+
+.bigger-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.square {
+    margin-top: 50px;
+    margin-left: 14px;
+    height: 60px;
+    width: 60px;
+    background-color: #f39c12;
+    transition-duration: 1s;
+}
+
+.square:hover {
+    height: 200px;
+    background-color: #a55eea;
+    border-radius: 25px;
+}
+
+#squares {height: 250px;}
+
+#list {height: 300px;}
+
+.footer {
+    width: 100%;
+    height: 170px;
+    background-image: url(https://images.pexels.com/photos/301378/pexels-photo-301378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+}
+
+.footer-text {
+    font-family: "Concert One", cursive;
+    text-shadow: 5px 5px 5px #0097e6;
+    color: #f6e58d;
+}
